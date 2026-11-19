@@ -19,6 +19,11 @@ Tests for the public API https://jsonplaceholder.typicode.com
 - DELETE /posts/{id} - deletes the created post, status is 200 or 204
 - Base URL, title and body are stored as collection variables
 
+## Task 4 - test_practice_page.py (Pytest + Playwright)
+UI tests for https://rahulshettyacademy.com/AutomationPractice/
+- Dropdown - selects Option2 and checks the selected value
+- Checkbox - checks and unchecks Option1
+
 ## How to run
 ```
 pip install -r requirements.txt
@@ -34,4 +39,11 @@ Or run it from the command line with Newman:
 ```
 npm install -g newman
 newman run Task3_Postman_Collection.json
+```
+
+### Playwright tests
+```
+pip install pytest-playwright
+playwright install chromium
+pytest test_practice_page.py -v
 ```
