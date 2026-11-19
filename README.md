@@ -35,12 +35,6 @@ pytest -v
 - In Postman, click Import and select Task3_Postman_Collection.json
 - Open the collection and click Run to execute all requests with their tests
 
-Or run it from the command line with Newman:
-```
-npm install -g newman
-newman run Task3_Postman_Collection.json
-```
-
 ### Playwright tests
 ```
 pip install pytest-playwright
